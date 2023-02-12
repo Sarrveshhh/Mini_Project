@@ -16,8 +16,8 @@ def predict():
     pre = np.array(values)
     pre = pre.reshape(1, -1)
     prediction = model.predict(pre)
-
-    return str(prediction[0])
+    finalResult = {'Output': prediction[0]}
+    return str(finalResult)
     
 
 
